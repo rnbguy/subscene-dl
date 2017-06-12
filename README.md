@@ -1,6 +1,12 @@
 Subscene
 ========
 
+To install, simply do:
+
+```
+$ pip3 install git+https://github.com/rnbdev/subscene-dl
+```
+
 To use (with caution), simply do:
 
 ```
