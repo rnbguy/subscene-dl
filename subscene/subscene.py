@@ -94,8 +94,7 @@ def search_keywords(filename):
     a = a.lower().replace(".", " ").split()
     return (n, a)
 
-def command_line():
-    video_filename = sys.argv[1]
+def search_with_filename(video_filename):
     q, a = search_keywords(re.sub(r":|'|&", "", video_filename))
     print("keyword: {}".format(" ".join(q)))
     mr = re.compile("(?=.*" +  ")(?=.*".join(q + a) + ")", flags=re.IGNORECASE)
@@ -137,6 +136,9 @@ def command_line():
                 vid_name = os.path.splitext(video_filename)[0]
                 os.rename(infofile.filename, vid_name+sub_ext)
 
+
+def command_line():
+    search_with_filename(sys.argv[1])
 
 if __name__ == "__main__":
     command_line()
