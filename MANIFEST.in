@@ -1,3 +1,1 @@
-include README.md
-include LICENSE.md
-include requirements.txt
+include requirements.txt README.md LICENSE.md
