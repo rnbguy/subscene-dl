@@ -137,8 +137,8 @@ def search_with_filename(video_filename):
                 os.rename(infofile.filename, vid_name+sub_ext)
 
 
-def command_line():
+def main():
     search_with_filename(sys.argv[1])
 
 if __name__ == "__main__":
-    command_line()
+    main()

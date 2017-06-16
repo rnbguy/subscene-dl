@@ -27,7 +27,7 @@ setup(
   packages=['subscene'],
   install_requires=requirements(),
   entry_points={
-    'console_scripts': ['subscene=subscene:command_line']
+    'console_scripts': ['subscene=subscene:main']
   },
   include_package_data=True
 )
