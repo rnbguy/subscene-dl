@@ -29,5 +29,6 @@ setup(
   entry_points={
     'console_scripts': ['subscene=subscene:main']
   },
+  license='MIT',
   include_package_data=True
 )
